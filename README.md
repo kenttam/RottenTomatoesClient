@@ -14,6 +14,10 @@ Time spent: 5
 - [x] User sees error message when there is a network error: http://cl.ly/image/1l1L3M460c3C
 - [x] User can pull to refresh the movie list.
 
+#### Optional
+
+- [x] For the larger poster, load the low-res first and switch to high-res when complete.
+
 ### Walkthrough
 ![Video Walkthrough](http://aspirationalvigilante.com/demo.gif)
 
