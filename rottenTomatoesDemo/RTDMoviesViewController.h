@@ -1,5 +1,5 @@
 //
-//  RTDViewController.h
+//  RTDMoviesViewController.h
 //  rottenTomatoesDemo
 //
 //  Created by Kent Tam on 10/13/14.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RTDViewController : UIViewController
+@interface RTDMoviesViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *networkErrorView;
 
 @end

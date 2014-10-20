@@ -7,12 +7,22 @@
 //
 
 #import "RTDAppDelegate.h"
+#import "RTDMoviesViewController.h"
 
 @implementation RTDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    RTDMoviesViewController *vc = [[RTDMoviesViewController alloc] init];
+    vc.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController: vc];
+    self.window.rootViewController = nvc;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 							
